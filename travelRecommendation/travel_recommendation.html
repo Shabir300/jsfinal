@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelBloom - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+ 
+    <img class='main_bg_img' src='https://wallpapers.com/images/hd/travel-hd-axhrsecphqby11wk.jpg' alt='bg' />
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="nav-right">
+            <input type="text" id="searchInput" placeholder="Search..." />
+            <button id='searchInput' onclick="searchRecommendations()">Search</button>
+            <button onclick="clearResults()">Clear</button>
+        </div>
+    </nav>
+
+    <!-- HOME PAGE -->
+    <section class="home">
+        <h1 class='main_heading'>Welcome to TravelBloom</h1>
+        <p>Your guide to beaches, temples, and countries around the world.</p>
+
+        <div class="social-icons">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDy_BNkPSR9l2X5I074rtb6j-z-i2Iz2yblw&s" alt="facebook">
+            <img src="https://store-images.s-microsoft.com/image/apps.43327.13510798887167234.cadff69d-8229-427b-a7da-21dbaf80bd81.79b8f512-1b22-45d6-9495-881485e3a87e?h=210" alt="instagram">
+            <img src="https://img.freepik.com/premium-photo/twitter-logo_1080029-97.jpg?semt=ais_hybrid&w=740&q=80" alt="twitter">
+        </div>
+    </section>
+
+    <div id="results"></div>
+
+
+    <section class="about">
+        <h1>About Us</h1>
+        <p>We are a travel recommendation website helping users explore beaches, temples, and countries worldwide.</p>
+
+        <h2>Our Team</h2>
+        <div class="team">
+            <p><strong>Shabir Ahmed</strong> – Full Stack Developer</p>
+            <p><strong>Sarah Khan</strong> – UX Designer</p>
+            <p><strong>Ali Raza</strong> – Travel Research Analyst</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h1>Contact Us</h1>
+
+        <form>
+            <input type="text" placeholder="Your Name" required><br>
+            <input type="email" placeholder="Your Email" required><br>
+            <textarea placeholder="Your Message" rows="5" required></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+
+    <script src="./travel_recommendation.js"></script>
+</body>
+</html>
